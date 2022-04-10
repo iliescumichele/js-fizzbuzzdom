@@ -14,7 +14,7 @@ Applica uno stile differente a seconda del valore dell’indice per i multipli d
 
 */
 
-//salvo il containe rin una cost
+//salvo il container in una cost
 const container = document.querySelector('.container');
 
 //salvo in una variabile il numero di iterazioni
@@ -22,15 +22,26 @@ const maxIter = 30;
 
 for(let i=1; i<=maxIter; i++){
 
+    //creo l'elemento da aggiungere
+    const boxIN = document.createElement('div');
+
+    //gli do la classe
+    boxIN.className = 'box';
+
     if( (i % 3 === 0) && (i % 5 === 0)){
-        console.log("FizzBuzz")
+        console.log("FizzBuzz");
+        boxIN.append('FizzBuzz');
     } else if( i % 3 === 0){
         console.log("Fizz");
+        boxIN.append("Fizz");
     } else if( i % 5 === 0){
         console.log("Buzz");
+        boxIN.append("Buzz");
     } else{
         console.log(i);
+        boxIN.append(i);
     }
 
+    container.append(boxIN);
     
 }
