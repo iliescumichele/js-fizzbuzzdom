@@ -18,7 +18,7 @@ Applica uno stile differente a seconda del valore dell’indice per i multipli d
 const container = document.querySelector('.container');
 
 //salvo in una variabile il numero di iterazioni
-const maxIter = 30;
+const maxIter = 100;
 
 for(let i=1; i<=maxIter; i++){
 
