@@ -14,3 +14,23 @@ Applica uno stile differente a seconda del valore dell’indice per i multipli d
 
 */
 
+//salvo il containe rin una cost
+const container = document.querySelector('.container');
+
+//salvo in una variabile il numero di iterazioni
+const maxIter = 30;
+
+for(let i=1; i<=maxIter; i++){
+
+    if( (i % 3 === 0) && (i % 5 === 0)){
+        console.log("FizzBuzz")
+    } else if( i % 3 === 0){
+        console.log("Fizz");
+    } else if( i % 5 === 0){
+        console.log("Buzz");
+    } else{
+        console.log(i);
+    }
+
+    
+}
