@@ -31,15 +31,19 @@ for(let i=1; i<=maxIter; i++){
     if( (i % 3 === 0) && (i % 5 === 0)){
         console.log("FizzBuzz");
         boxIN.append('FizzBuzz');
+        boxIN.classList.add('fizz_buzz_bkg_color')
     } else if( i % 3 === 0){
         console.log("Fizz");
         boxIN.append("Fizz");
+        boxIN.classList.add('fizz_bkg_color')
     } else if( i % 5 === 0){
         console.log("Buzz");
         boxIN.append("Buzz");
+        boxIN.classList.add('buzz_bkg_color')
     } else{
         console.log(i);
         boxIN.append(i);
+        boxIN.classList.add('main_bkg_color')
     }
 
     container.append(boxIN);
